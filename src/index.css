@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+#app {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+.highlight {
+  background:dodgerblue;
+  color:white;
+}
+
+.animate {
+  animation-name: slideInRight; 
+  animation-duration: 8s; 
+  animation-timing-function: ease; 
+}
+
+.nominee {
+  width: 400px;
+  border-radius:50px;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    border-radius:1000px;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;  
+  }
+}
